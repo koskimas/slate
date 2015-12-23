@@ -69,10 +69,12 @@
   }
 
   function highlight() {
-    if (this.value) content.highlight(this.value, highlightOpts);
+    // Disable highlight because it is slooow for large pages.
+    // if (this.value) content.highlight(this.value, highlightOpts);
   }
 
   function unhighlight() {
-    content.unhighlight(highlightOpts);
+    // Disable highlight because it is slooow for large pages.
+    // content.unhighlight(highlightOpts);
   }
 })();
