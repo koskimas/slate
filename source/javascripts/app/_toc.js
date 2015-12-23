@@ -33,7 +33,9 @@
     });
 
     $(".page-wrapper").click(closeToc);
-    $(".tocify-item").click(closeToc);
+    // Disable closing on item click. It works horribly with
+    // nesting on mobile devices.
+    // $(".tocify-item").click(closeToc);
   };
 
   // Hack to make already open sections to start opened,
