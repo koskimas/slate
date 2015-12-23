@@ -15,6 +15,10 @@
 
   $(populate);
   $(bind);
+  
+  // Hack to allow all the words.
+  lunr.stopWordFilter.stopWords.length = 1
+  lunr.stopWordFilter.stopWords.elements = [""]
 
   function populate() {
     $('h1, h2').each(function() {
