@@ -188,6 +188,19 @@ html, body {
     .tocify-item>a {
       padding-left: $nav-padding + $nav-indent;
       font-size: 12px;
+      color: white;
+    }
+    
+    .tocify-subheader {
+      .tocify-item>a {
+        padding-left: $nav-padding + 2 * $nav-indent;
+      }
+      
+      .tocify-subheader {
+        .tocify-item>a {
+          padding-left: $nav-padding + 3 * $nav-indent;
+        }
+      }
     }
 
     // for embossed look:
